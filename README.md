@@ -1,0 +1,2 @@
+# Uproot
+We are creating a visually-driven database application to be utilized in solving issues that occur within a work environment. Each issue will be categorized by its incident type, the severity, and how it will fall under components and subcomponents. Two different user types will include an end-user who creates an issue, and a product manager who reviews all created issues. Our utilized technologies will include React, Node, MongoDB, Heroku deployment, D3.js, JIRA management and API.

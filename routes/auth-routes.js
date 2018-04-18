@@ -60,13 +60,17 @@ router.get('/google/redirect', passport.authenticate('google'),  (req, res) => {
       console.log("testing4");
     	// res.render('profile');
     };
-
     
       res.redirect('/books');
       // res.send("You reached callback");
 
-      // res.render('profile');
-  
+      // res.render('profile');  
 });
+
+router.get('/facebook', passport.authenticate('facebook',{failureRedirect: '/'}, { scope: 'public_profile' }));
+router.get('/auth/facebook/redirect',
+  passport.authenticate('facebook', { successRedirect: 'http://localhost:3000/issues',
+                                      failureRedirect: '/' }));
+
 
 module.exports = router;

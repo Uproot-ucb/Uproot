@@ -7,6 +7,8 @@ import Nav from "./components/Nav";
 import Login from "./pages/Login";
 import Users from "./pages/Users";
 import DetailUsers from "./pages/DetailUsers";
+import D3graph from "./pages/D3graph";
+
 
 const App = () => (
   <Router>
@@ -18,7 +20,9 @@ const App = () => (
         <Route exact path="/issues/:id" component={Detail} />
         <Route exact path="/users" component={Users} />
         <Route exact path="/users/:id" component={DetailUsers} />
+        <Route exact path="/D3graph" component={D3graph} />
         <Route component={NoMatch} />
+
       </Switch>
     </div>
   </Router>

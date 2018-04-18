@@ -105,6 +105,11 @@ class Users extends Component {
                         {user.role} from {user.source}
                       </strong>
                     </Link>
+                      {user.role==='endUser' ? (
+                        <a>testing if condition</a>
+                        ): <a></a>
+                      } 
+
                     <DeleteBtn onClick={() => this.deleteUser(user._id)} />
                   </ListItem>
                 ))}

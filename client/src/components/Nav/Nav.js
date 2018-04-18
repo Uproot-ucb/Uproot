@@ -18,6 +18,9 @@ const Nav = () => (
         <a href="/users" className="navbar-brand">
           <strong>Users</strong>
         </a>
+        <a href="/D3graph" className="navbar-brand">
+          <strong>Graph</strong>
+        </a>
       </div>
     </div>
   </nav>

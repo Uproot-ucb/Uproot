@@ -98,27 +98,22 @@ class Login extends Component {
         <Row>
           <Col size="md-12">
             <nav>
-                <ul>
-         
-                    <li><a href="/auth/logout">Log out</a></li>
-        
-                    <li><a href="/auth/login">Login</a></li>
-   
-      
-                </ul>
-                              <FormBtn
-                
-                onClick={this.addsubComponent1}
-              >Add Sub-Component
+             <FormBtn onClick={this.addsubComponent1}>Add Sub-Component
               </FormBtn>
             </nav>
           </Col>
           <Col size="md-12 sm-12">
             <header>
-              <h1>Login using...</h1>
+              <h2>Login using...</h2>
             </header>
             <main>
-              <a class="google-btn" href="http://localhost:3001/auth/google">Google+</a>
+              <a className="google-btn" href="http://localhost:3001/auth/google">Google+</a>
+            </main>
+            <header>
+              <h2>Login using...</h2>
+            </header>
+            <main>
+              <a className="facebook-btn" href="http://localhost:3001/auth/facebook">Facebook</a>
             </main>
           </Col>
         </Row>

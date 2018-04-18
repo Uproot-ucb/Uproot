@@ -12,6 +12,12 @@ const Nav = () => (
         <a href="/" className="navbar-brand">
           <strong>Uproot</strong>
         </a>
+        <a href="/issues" className="navbar-brand">
+          <strong>Issues</strong>
+        </a>
+        <a href="/users" className="navbar-brand">
+          <strong>Users</strong>
+        </a>
       </div>
     </div>
   </nav>

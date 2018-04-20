@@ -1,4 +1,5 @@
 import React from "react";
+import "./Nav.css";
 
 const Nav = () => (
   <nav className="navbar navbar-inverse navbar-top">
@@ -12,14 +13,11 @@ const Nav = () => (
         <a href="/" className="navbar-brand">
           <strong>Uproot</strong>
         </a>
-        <a href="/issues" className="navbar-brand">
-          <strong>Issues</strong>
+        <a href="/issues" className="navbar-brand">Create An Issue
         </a>
-        <a href="/users" className="navbar-brand">
-          <strong>Users</strong>
+        <a href="/issuesReported" className="navbar-brand">Issues Reported
         </a>
-        <a href="/D3graph" className="navbar-brand">
-          <strong>Graph</strong>
+        <a href="/users" className="navbar-brand">Users
         </a>
       </div>
     </div>

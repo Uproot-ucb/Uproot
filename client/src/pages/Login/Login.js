@@ -92,34 +92,58 @@ class Login extends Component {
   
 
 
-  render() {
-    return (
-      <Container fluid>
-        <Row>
-          <Col size="md-12">
-            <nav>
-             <FormBtn onClick={this.addsubComponent1}>Add Sub-Component
-              </FormBtn>
-            </nav>
-          </Col>
-          <Col size="md-12 sm-12">
-            <header>
-              <h2>Login using...</h2>
-            </header>
-            <main>
-              <a className="google-btn" href="http://localhost:3001/auth/google">Google+</a>
-            </main>
-            <header>
-              <h2>Login using...</h2>
-            </header>
-            <main>
-              <a className="facebook-btn" href="http://localhost:3001/auth/facebook">Facebook</a>
-            </main>
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+//   render() {
+//     return (
+//       <Container fluid>
+//         <Row>
+//           <Col size="md-12 sm-12">
+//             <header>
+//               <h2>Login using...</h2>
+//             </header>
+//             <main>
+//               <a className="google-btn" href="http://localhost:3001/auth/google">Google+</a>
+//             </main>
+//             <header>
+//               <h2>Login using...</h2>
+//             </header>
+//             <main>
+//               <a className="facebook-btn" href="http://localhost:3001/auth/facebook">Facebook</a>
+//             </main>
+//           </Col>
+//         </Row>
+//       </Container>
+//     );
+//   }
+// }
+
+render() {
+  return (
+    <Container fluid>
+      <Row>
+        <Col size="md-12 sm-12">
+          <header>
+            <h2>Login using...</h2>
+          </header>
+          {/* <div sectionStyle = {
+            width: "40px",
+            height: "400px",
+            backgroundSize: " "
+            backgroundImage: "url=(http://res.cloudinary.com/deuxif1bt/image/upload/v1524194273/uproot_logo-01.png)"
+          } */}
+          <main>
+            <a className="google-btn" href="http://localhost:3001/auth/google">Google+</a>
+          </main>
+          <header>
+            <h2>Login using...</h2>
+          </header>
+          <main>
+            <a className="facebook-btn" href="http://localhost:3001/auth/facebook">Facebook</a>
+          </main>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
 }
 
 export default Login;

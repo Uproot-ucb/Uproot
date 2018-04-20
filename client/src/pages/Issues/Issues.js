@@ -179,27 +179,6 @@ class Issues extends Component {
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-12 sm-12">
-            <Jumbotron>
-              <h1>Issues Reported</h1>
-            </Jumbotron>
-            {this.state.product.length ? (
-              <List>
-                {this.state.product.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
-                      <strong>
-                        {book.title} by {book.reporter}
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col>
         </Row>
       </Container>
     );

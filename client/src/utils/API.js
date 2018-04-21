@@ -26,5 +26,17 @@ export default {
   // Deletes the user with the given id
   deleteUser: function(id) {
     return axios.delete("/api/users/" + id);
+  },
+    loginUser: function() {
+    return axios.get("/auth/google");
+  },
+    getComps: function() {
+      return axios.get("/api/comps");
+  },
+    getNodes: function() {
+      return axios.get("/api/comps/nodes");
+  },
+    getLinks: function() {
+      return axios.get("/api/comps/links");
   }
 };

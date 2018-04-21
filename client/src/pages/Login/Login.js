@@ -68,53 +68,35 @@ class Login extends Component {
         console.log(this.state.component)
     }
   };
-
-  // addComponent = event => {
-  //   event.preventDefault();
-  //   const newComponent = this.state.component;
-  //   console.log("Before: "+this.state.component);
-  //   this.setState({
-  //     component: this.state.component.concat(newComponent )
-  //   });
-  //   console.log("After: "+this.state.component);
-  // }
-
   addsubComponent1 = event => {
       event.preventDefault();
       // superagent
       //   .post('/auth/login').end((err,res) => {
       //     if(err) {console.log("error")};
       //       console.log(res)
-      API.loginUser().then(res => console.log(res))
+      API.loginBook().then(res => console.log(res))
       .catch(err => console.log(err));
         };
-      
-  
-
 
   render() {
+    // var style = {},
     return (
       <Container fluid>
         <Row>
-          <Col size="md-12">
-            <nav>
-             <FormBtn onClick={this.addsubComponent1}>Add Sub-Component
-              </FormBtn>
-            </nav>
-          </Col>
           <Col size="md-12 sm-12">
-            <header>
-              <h2>Login using...</h2>
-            </header>
-            <main>
-              <a className="google-btn" href="http://localhost:3001/auth/google">Google+</a>
+          <main>
+            <center><a href="http://localhost:3001/auth/google"> <img src="http://res.cloudinary.com/deuxif1bt/image/upload/v1524289618/google-.jpg" alt="Cinque Terre" width="350px" height="70px"></img></a>
+              <a href="http://localhost:3001/auth/facebook"> <img src="http://res.cloudinary.com/deuxif1bt/image/upload/v1524289618/facebook-sign-in-button.png" alt="Cinque Terre" width="400px" height="150px"></img></a></center>
             </main>
-            <header>
-              <h2>Login using...</h2>
-            </header>
-            <main>
-              <a className="facebook-btn" href="http://localhost:3001/auth/facebook">Facebook</a>
-            </main>
+            <div style = {{
+                align: "center",
+                width: "100%",
+                height: "600px",
+                opacity: "0.5",
+                backgroundSize: "cover",
+                backgroundImage: "url('http://res.cloudinary.com/deuxif1bt/image/upload/v1524194273/uproot_logo-01.png')"
+              }}>
+            </div>
           </Col>
         </Row>
       </Container>
